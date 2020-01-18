@@ -191,5 +191,30 @@
         }
      }
  }
+
+ function send_contact_message()
+ {
+    if(isset($_POST['submit']))
+    {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    $to = "someemail@clue.com";
+    $headers = "From: {$name} {$email}";
+
+    $result = mail($to, $subject, $message, $headers);
+    if(!$result)
+    {
+        set_message("Sorry, we could not send your message, try again later.");
+        redirect("contact.php");
+    }else{
+        set_message("Your message has been sent successfully.");
+        redirect("contact.php");
+    }
+
+    }
+ }
  
 ?>
