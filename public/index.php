@@ -23,7 +23,7 @@
 
                 <div class="row">
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
+                    <!-- <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
@@ -44,7 +44,7 @@
                             </div>
                             <a class="btn btn-primary center-block" target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">Buy Now</a>
                         </div>
-                    </div>
+                    </div> -->
 
                     <?php get_products(); ?>
 
