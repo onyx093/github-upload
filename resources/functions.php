@@ -91,6 +91,7 @@
                             </p>
                         </div>
                         <a class="btn btn-primary center-block" target="_blank" href="item.php?id={$row['product_id']}">View more</a>
+                        <a class="btn btn-primary center-block" href="cart.php?add={$row['product_id']}">Add to cart</a>
                     </div>
                 </div>
             DELIMITER;
